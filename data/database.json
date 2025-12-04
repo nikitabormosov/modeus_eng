@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "student@example.com",
+      "password": "password123",
+      "name": "John Student",
+      "role": "student",
+      "groupId": "CS-101"
+    },
+    {
+      "id": 2,
+      "email": "teacher@example.com",
+      "password": "password123",
+      "name": "Dr. Smith",
+      "role": "teacher",
+      "subjects": ["Mathematics", "Advanced Math"]
+    },
+    {
+      "id": 3,
+      "email": "admin@example.com",
+      "password": "password123",
+      "name": "Admin User",
+      "role": "admin"
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "name": "CS-101",
+      "students": [1]
+    }
+  ],
+  "subjects": [
+    {
+      "id": 1,
+      "name": "Mathematics",
+      "teacherId": 2
+    },
+    {
+      "id": 2,
+      "name": "Physics",
+      "teacherId": 2
+    }
+  ],
+  "schedule": [
+    {
+      "id": 1,
+      "groupId": 1,
+      "subjectId": 1,
+      "teacherId": 2,
+      "day": "monday",
+      "time": "09:00-10:30",
+      "room": "A101"
+    },
+    {
+      "id": 2,
+      "groupId": 1,
+      "subjectId": 2,
+      "teacherId": 2,
+      "day": "monday",
+      "time": "10:45-12:15",
+      "room": "B205"
+    }
+  ]
+}
